@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HALAMAN MENU INI DIBUAT OLEH FADILLA RAHMAYANTI-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,600&family=Lobster&family=Merriweather:ital,wght@1,900&family=Pacifico&family=Vollkorn:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <style>
+     h1 {
+      margin: 0 0 20px 0;
+      font-weight: 500;
+      font-size: 34px;
+      color: #333;
+      text-transform: uppercase;
+      font-family: Poppins;
+
+    }
+
+    h2 {
+      margin: 0 0 20px 0;
+      font-weight: 500;
+      font-size: 28px;
+      color: #333;
+      text-transform: uppercase;
+      font-family: Vollkorn;
+
+    }
+
+    h5 {
+      margin: 0 0 20px 0;
+      font-weight: 500;
+      font-size: 22px;
+      color: #333;
+      text-transform: uppercase;
+      font-family: Lato;
+
+    }
+
+    p {
+      font-size: 18px;
+      font-family: Lato;
+      font-weight: 300;
+      color: #333;
+    } 
+<title>PWEB-C Bakery || Menu</title>
+</head>
+<style>
+  	a, a:hover{
+		text-decoration: none;
+		color: white;
+    font-family: Merriweather;
+	}
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: .5s ease;
+  background-color: /*rgba(0, 140, 186, .3)*/ rgba(0, 0, 0, .3);
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-item button {
+  padding: 9px 12px !important;
+  transform: scale(1);
+  transition: .3s ease-out;
+}
+
+.carousel-item button:hover {
+  transform: scale(1.1);
+}
+
+</style>
+<body class="bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+      <a class="navbar-brand text-light" href="#">KUENAK</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active font-weight-bold text-light" href="home.html">Home<span
+                class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active font-weight-bold text-light" href="Menu.html">Menu<span
+                  class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active font-weight-bold text-light" href="Order.html">Order<span
+                  class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active font-weight-bold text-light" href="About Us.html">About US<span
+                  class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active font-weight-bold text-light" href="Contact Us.html">Contact US<span
+                  class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+      <div class="container-fluid" style="margin-top:80px">
+        <div class="text-center">
+          <h1 class="display-4">KUENAK BAKERY</h1>
+          <h1>Menu</h1>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img style="height: 100vh;" src="gambar/red-velvet.jpg" alt="Red Velvet">
+              <div class="overlay">
+                <div class="text"><button type="button" class="btn btn-danger"  data-toggle="modal" data-target="#redvelvet">Red Velvet</button></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img style="height: 100vh;" src="gambar/rainbow-cake.jpg" alt="Rainbow Cake">
+              <div class="overlay">
+                <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#rainbowcake">Rainbow Cake</button></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 100vh;" src="gambar/cheese-cake.jpg" alt="Cheese Cake">
+                <div class="overlay">
+                  <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#cheesecake">Cheese Cake</button></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 100vh;" src="gambar/black-forest.jpg" alt="Black Forest">
+                <div class="overlay">
+                  <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#blackforest">Black Forest</button></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 100vh;" src="gambar/bolu-susu-lembang.jpg" alt="Bolu Susu Lembang">
+                <div class="overlay">
+                  <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#bolususulembang">Bolu Susu Lembang</button></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 100vh;" src="gambar/bolu-pisang.jpg" alt="Bolu Pisang">
+                <div class="overlay">
+                  <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#bolupisang">Bolu Pisang</button></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 100vh;" src="gambar/bolu-macan.jpg" alt="Bolu Macan">
+                <div class="overlay">
+                  <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#bolumacan">Bolu Macan</button></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height: 100vh;" src="gambar/bolu-kemojo.jpg" alt="Bolu Kemojo">
+                <div class="overlay">
+                  <div class="text"><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#bolukemojo">Bolu Kemojo</button></div>
+                </div>
+            </div>
+    
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div> 
+      </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="redvelvet" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Tart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Red Velvet</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">150k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Tart lapis coklat berwarna merah yang dilapisi dengan keju krim putih.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="rainbowcake" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Tart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Rainbow Cake</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">165k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Tart yang terbuat dari sejumlah manisan yang berwarna pelangi.</p><!--sumber : https://en.wikipedia.org/wiki/Rainbow_cookie-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="cheesecake" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Tart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Cheese Cake</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">120k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Tart yang terbuat dari campuran keju lembut dan segar (biasanya keju cottage , keju krim atau ricotta ), telur, dan gula.</p><!--sumber : https://en.wikipedia.org/wiki/Cheesecake-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="blackforest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Tart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Black Forest</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">180k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Tart coklat yang dilapisi krim segar, serutan coklat dan ceri yang direndam dalam Kirschwasser.</p> <!-- sumber : https://id.wikipedia.org/wiki/Kue_Black_Forest-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="bolususulembang" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Bolu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Bolu Susu Lembang</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">85k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Bolu yang terbuat dari susu khas lembang dengan vla dan taburan keju yang melimpah.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="bolupisang" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Bolu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Bolu Pisang</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">75k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">>Bolu khas nusantara, bertekstur lembut, yang beraroma dan cita rasa khas pisang.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="bolumacan" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Bolu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Bolu Macan</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">110k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Bolu khas bangka, bertekstur lembut yang bercorak seperti marmer dan manis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="bolukemojo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Kue Bolu</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row" style="margin-bottom: 0; border-bottom: 2px solid #F1F1F1;">
+              <div class="col-md-6" style="padding-bottom: 0 !important;">
+                <p style="margin: 0;" class="font-weight-bold text-left">Bolu Kemojo</p>
+              </div>
+
+              <div class="col-md-6">
+                <p style="margin: 0;" class="font-weight-bold text-right">35k</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <p class="font-italic font-weight-light">Bolu khas melayu, bertekstur padat yang terbuat dari tepung beras, campuran air daun suji, daun pandan.</p><!--sumber : https://lifestyle.okezone.com/read/2017/07/18/298/1738829/food-story-sudah-tahu-belum-muasal-sejarah-bolu-kemojo-khas-riau-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid bg-light">
+    <hr size="20px">
+    <div class="container text-center">
+      <p>KUENAK BAKERY</p>
+    </div>
+    <div class="row mt">
+      <div class="col-md text-center">
+        <p>dibangun oleh Faykar, Fadila, Graha</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md text-center">
+        <p>EST 2020</p>
+      </div>
+    </div>
+  </div>
+<!--
+    sumber - sumber gambar : 
+red velvet : https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//102/MTA-3987741/dapur_cokelat_dapur_cokelat_red_velvet_cake_10x10_full02.jpg
+black forest :https://livforcake.com/wp-content/uploads/2017/07/black-forest-cake-thumb.jpg
+rainbow cake : https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/rainbow-cake760x580.jpg?ext=.jpg
+cheese cake : https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Triple-Berry-No-Bake-Cheesecake_EXPS_TOHcom19_138951_B01_30_6b.jpg
+bolu susu lembang : https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT1qUB0JUXHauGyjbHypoPBJDWvSH7so_5MPQ&usqp=CAU
+bolu kemojo : https://merahputih.com/media/90/ea/8b/90ea8b00ad8a05519055636fb7e6ba70_400x250.jpg
+bolu macan : https://cdn.idntimes.com/content-images/post/20200818/66801708-648773182268916-5560122500596702941-n-89bc4ea9201576ef60d486b266064b51_600x400.jpg
+bolu pisang : https://selerasa.com/wp-content/uploads/2015/12/images_Kue-Basah_kue-bolu-pisang-raja.jpg
+-->
+</body>
+</html>
